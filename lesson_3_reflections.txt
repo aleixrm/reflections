@@ -9,3 +9,15 @@ Why might you want to always pull changes manually rather than having Git automa
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 	A clone is a copy of a repository (local or remote). A fork is a clone of the another's github remote repository on a new github remote repository of your own. A branch is a duplication of the set of objects that are under version control, which posterior commits are made in parallel from the other branches and differs until a merge is done.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	That you don't need to be online to work with the repository changes that have been done until the last sync.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+	Using another type of version control, like svn, and by another way of communication, like forums or mails, or bug trackers. The advantage of git and having github as repository is that you have all-in-one, and at the time of collaborating is easier to merge the changes and get synced with all the collaboration team using pull requests without break the main development branch.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	
+	For example, when you want to try some experimental changes, or you want to have a code freeze and maintain that code, or for bug solving. You can continue the common developement in the master branch and merge the changes when you find necessary.
