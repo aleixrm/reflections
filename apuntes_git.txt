@@ -111,3 +111,14 @@ git push <remote_repository_name> <branch>
 #pull changes from remote
 git pull origin <branch_name>
 
+##Conflicts:
+#Update a branch with a remote repository copy
+git fetch origin
+#Merge changes with the local master branch
+git merge master origin/master
+#Pull do the fetch+merge at the same time
+git pull origin master
+
+#Fast forward merge -> occurs when we merge two nodes, one of which is ancestor of the other.
+
+#Pull request-> creates a branch on the remote repository with our changes
